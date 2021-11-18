@@ -11,7 +11,7 @@
 note : the url link for the image is in the message key .
 
 
-### When a user clicks on the "Show New"  button, your application should fetch the json data from the above link and then display the random pet image .
+### When a user clicks on the "Show New"  button, your application should fetch the json data from the above link and then display the  pet image .
 
 ### Your application should look similar to this app:
 

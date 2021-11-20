@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PetImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wm7-rA-o5P">
+                                <rect key="frame" x="20" y="112" width="374" height="341"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="0le-pf-pYa"/>
+                                    <constraint firstAttribute="height" constant="341" id="AJQ-Il-jW8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOT-Rs-2a8">
+                                <rect key="frame" x="111" y="607" width="192" height="57"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Shwo New"/>
+                                <connections>
+                                    <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b7I-iZ-cf7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Image !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axf-ye-5hx">
+                                <rect key="frame" x="20" y="44" width="162" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="axf-ye-5hx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2RZ-RB-p4O"/>
+                            <constraint firstItem="hOT-Rs-2a8" firstAttribute="top" secondItem="wm7-rA-o5P" secondAttribute="bottom" constant="154" id="Ods-mz-vjY"/>
+                            <constraint firstItem="hOT-Rs-2a8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SnC-gT-NRv"/>
+                            <constraint firstItem="wm7-rA-o5P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="T7s-La-Jf4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wm7-rA-o5P" secondAttribute="trailing" constant="20" id="bW6-bG-H5G"/>
+                            <constraint firstItem="wm7-rA-o5P" firstAttribute="top" secondItem="axf-ye-5hx" secondAttribute="bottom" constant="8" symbolic="YES" id="fOi-jy-O3s"/>
+                            <constraint firstItem="wm7-rA-o5P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="mIt-W2-WPw"/>
+                            <constraint firstItem="axf-ye-5hx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wte-Gi-05N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="petImage" destination="wm7-rA-o5P" id="D09-P3-fgA"/>
+                        <outlet property="showButton" destination="hOT-Rs-2a8" id="1UV-1Y-al7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

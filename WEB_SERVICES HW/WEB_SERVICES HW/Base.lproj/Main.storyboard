@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WEB_SERVICES_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet images !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh3-W5-mTt">
+                                <rect key="frame" x="20" y="128" width="162.5" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i1r-7G-Uf5">
+                                <rect key="frame" x="20" y="244" width="374" height="408"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MD-MQ-xML">
+                                <rect key="frame" x="143" y="719" width="128" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show New Imag"/>
+                                <connections>
+                                    <action selector="showRandomPetImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6TV-9k-eim"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6MD-MQ-xML" secondAttribute="bottom" constant="112" id="AYh-V7-i5X"/>
+                            <constraint firstItem="6MD-MQ-xML" firstAttribute="top" secondItem="i1r-7G-Uf5" secondAttribute="bottom" constant="67" id="CgM-Yd-oD6"/>
+                            <constraint firstItem="6MD-MQ-xML" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OgQ-uU-G34"/>
+                            <constraint firstItem="i1r-7G-Uf5" firstAttribute="top" secondItem="fh3-W5-mTt" secondAttribute="bottom" constant="79" id="PRM-Ug-GoV"/>
+                            <constraint firstItem="fh3-W5-mTt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UVY-AF-gmR"/>
+                            <constraint firstItem="i1r-7G-Uf5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ab8-o6-kPy"/>
+                            <constraint firstItem="fh3-W5-mTt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="jZa-ja-Kk1"/>
+                            <constraint firstItem="i1r-7G-Uf5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kUy-ii-Ms5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i1r-7G-Uf5" secondAttribute="trailing" constant="20" id="weU-D7-e8K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="petImage" destination="i1r-7G-Uf5" id="rvb-r1-C7z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

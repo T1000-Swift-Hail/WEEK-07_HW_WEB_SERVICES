@@ -6,3 +6,8 @@
 //
 
 import Foundation
+struct Pet : Decodable {
+    let message : String
+    let status : String
+}
+

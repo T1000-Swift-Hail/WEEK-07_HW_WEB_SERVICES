@@ -9,12 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
     let urlSession : URLSession = URLSession(configuration: .default)
-
+    
     @IBOutlet weak var petImag: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     
     func getPetDataFromWeb() {
@@ -33,12 +33,12 @@ class ViewController: UIViewController {
             }
             
             if let data = data {
-               // print(String(data: data, encoding: .utf8) ?? "No data there")
+                
                 
                 do {
-                let newPet : Pet = try JSONDecoder().decode(Pet.self, from: data)
+                    let newPet : Pet = try JSONDecoder().decode(Pet.self, from: data)
                     print(newPet)
-                    //self.getPetImageFromWeb(pet: newPet)
+                    
                     self.getPetImageFromWebDownloadTask(pet: newPet)
                 } catch {
                     print(error)
@@ -97,11 +97,11 @@ class ViewController: UIViewController {
             if let localURL = localURL {
                 
                 do {
-                  let imageDataFromTempFile = try Data(contentsOf: localURL)
-                  let petImage = UIImage(data: imageDataFromTempFile)
-                  
+                    let imageDataFromTempFile = try Data(contentsOf: localURL)
+                    let petImage = UIImage(data: imageDataFromTempFile)
+                    
                     DispatchQueue.main.async {
-                      self.petImag.image = petImage
+                        self.petImag.image = petImage
                     }
                     
                     
@@ -118,10 +118,10 @@ class ViewController: UIViewController {
         downloadTask.resume()
         
     }
-
+    
     @IBAction func showImagPet(_ sender: Any) {
         getPetDataFromWeb()
-
+        
     }
     
 }

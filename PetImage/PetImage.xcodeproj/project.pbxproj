@@ -14,8 +14,7 @@
 		D8E62DFC2749102E008E0A02 /* PetImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8E62DFA2749102E008E0A02 /* PetImage.xcdatamodeld */; };
 		D8E62DFE27491030008E0A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E62DFD27491030008E0A02 /* Assets.xcassets */; };
 		D8E62E0127491030008E0A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E62DFF27491030008E0A02 /* LaunchScreen.storyboard */; };
-		D8E62E11274929FC008E0A02 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D8E62E10274929FC008E0A02 /* SwiftyJSON */; };
-		D8E62E1427492A10008E0A02 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = D8E62E1327492A10008E0A02 /* AlamofireImage */; };
+		D8E62E16274A19F5008E0A02 /* PetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E62E15274A19F5008E0A02 /* PetImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +27,7 @@
 		D8E62DFD27491030008E0A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E62E0027491030008E0A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8E62E0227491030008E0A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8E62E15274A19F5008E0A02 /* PetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E62E11274929FC008E0A02 /* SwiftyJSON in Frameworks */,
-				D8E62E1427492A10008E0A02 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +68,7 @@
 				D8E62DFF27491030008E0A02 /* LaunchScreen.storyboard */,
 				D8E62E0227491030008E0A02 /* Info.plist */,
 				D8E62DFA2749102E008E0A02 /* PetImage.xcdatamodeld */,
+				D8E62E15274A19F5008E0A02 /* PetImage.swift */,
 			);
 			path = PetImage;
 			sourceTree = "<group>";
@@ -91,8 +90,6 @@
 			);
 			name = PetImage;
 			packageProductDependencies = (
-				D8E62E10274929FC008E0A02 /* SwiftyJSON */,
-				D8E62E1327492A10008E0A02 /* AlamofireImage */,
 			);
 			productName = PetImage;
 			productReference = D8E62DEE2749102E008E0A02 /* PetImage.app */;
@@ -123,8 +120,6 @@
 			);
 			mainGroup = D8E62DE52749102E008E0A02;
 			packageReferences = (
-				D8E62E0F274929FC008E0A02 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				D8E62E1227492A10008E0A02 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = D8E62DEF2749102E008E0A02 /* Products */;
 			projectDirPath = "";
@@ -153,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E62E16274A19F5008E0A02 /* PetImage.swift in Sources */,
 				D8E62DF62749102E008E0A02 /* ViewController.swift in Sources */,
 				D8E62DFC2749102E008E0A02 /* PetImage.xcdatamodeld in Sources */,
 				D8E62DF22749102E008E0A02 /* AppDelegate.swift in Sources */,
@@ -374,38 +370,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D8E62E0F274929FC008E0A02 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		D8E62E1227492A10008E0A02 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D8E62E10274929FC008E0A02 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D8E62E0F274929FC008E0A02 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-		D8E62E1327492A10008E0A02 /* AlamofireImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D8E62E1227492A10008E0A02 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
-			productName = AlamofireImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D8E62DFA2749102E008E0A02 /* PetImage.xcdatamodeld */ = {

@@ -28,7 +28,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Shwo New"/>
                                 <connections>
-                                    <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b7I-iZ-cf7"/>
+                                    <action selector="gitNewPetImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEw-bh-rg6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Image !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axf-ye-5hx">
@@ -52,7 +52,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="petImage" destination="wm7-rA-o5P" id="D09-P3-fgA"/>
+                        <outlet property="petImageView" destination="wm7-rA-o5P" id="2c7-ME-Tjj"/>
                         <outlet property="showButton" destination="hOT-Rs-2a8" id="1UV-1Y-al7"/>
                     </connections>
                 </viewController>

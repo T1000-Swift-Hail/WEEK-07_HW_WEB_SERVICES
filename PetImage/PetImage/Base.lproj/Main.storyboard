@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PetImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Image!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqZ-hV-fbW">
+                                <rect key="frame" x="42" y="137" width="137" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="eRj-Ty-Gxa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EqA-kt-WDX">
+                                <rect key="frame" x="20" y="202" width="374" height="331"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="331" id="5L7-Jf-FnD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFM-pB-RgJ">
+                                <rect key="frame" x="161.5" y="639" width="91.5" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.85952619699999999" blue="0.55971968260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Naw" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="PetDoge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HS1-A5-hXy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EqA-kt-WDX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Ua-AU-rDn"/>
+                            <constraint firstItem="zFM-pB-RgJ" firstAttribute="top" secondItem="EqA-kt-WDX" secondAttribute="bottom" constant="106" id="H9U-fi-iM4"/>
+                            <constraint firstItem="zFM-pB-RgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PSB-V5-r3k"/>
+                            <constraint firstItem="EqZ-hV-fbW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="WsW-2a-MNh"/>
+                            <constraint firstItem="EqA-kt-WDX" firstAttribute="top" secondItem="EqZ-hV-fbW" secondAttribute="bottom" constant="24" id="ZXE-qq-z97"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EqA-kt-WDX" secondAttribute="trailing" constant="20" id="Zue-zD-mQC"/>
+                            <constraint firstItem="EqZ-hV-fbW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="mcP-Q4-eJf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PetImage" destination="EqA-kt-WDX" id="Zbf-9r-yEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
